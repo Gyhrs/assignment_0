@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld", "helloworld\helloworld.csproj", "{F24F4480-A048-4408-ACA7-FC2D788A1267}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\helloworld.csproj", "{F24F4480-A048-4408-ACA7-FC2D788A1267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld.Tests", "helloworld.Tests\helloworld.Tests.csproj", "{0EE6F994-BE9B-4A7A-BDDD-DA397D53D29D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Tests", "App.Tests\helloworld.Tests.csproj", "{0EE6F994-BE9B-4A7A-BDDD-DA397D53D29D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
