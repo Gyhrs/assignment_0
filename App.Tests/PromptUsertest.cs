@@ -4,7 +4,7 @@ using System.IO;
 
 namespace App.Tests
 {
-    public class Helloworldtest
+    public class PromptUsertest
     {
         [Fact]
         public void Main_prints_Hello_World()
@@ -14,11 +14,11 @@ namespace App.Tests
             Console.SetOut(writer);
 
             // Act
-            Helloworld.Main(new string[0]);
+            PromptUser.Main(new string[0]);
             var output = writer.GetStringBuilder().ToString().Trim();
 
             // Assert
-            Assert.Equal("Hello World!", output);
+            Assert.Equal("Type in a year to learn if it is a leapyear!", output);
         }
     }
 }
