@@ -6,10 +6,16 @@ namespace App
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Type in a year to learn if it is a leapyear!");
-            var input = Console.ReadLine();
-            int conv = Convert.ToInt32(input);
-            var leapyearchecker = new Leapyear(conv);
+            Leapyear leapyear = new Leapyear();
+            try
+            {
+                 leapyear.promptUser();
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Please write a real year");
+                Main(args);
+            }
         }
     }
 }

@@ -7,18 +7,23 @@ namespace App.Tests
     public class PromptUsertest
     {
         [Fact]
-        public void Main_prints_Hello_World()
+        public void argumentexception_is_thrown() 
         {
-            // Arrange
-            var writer = new StringWriter();
-            Console.SetOut(writer);
+            var leapyear = new Leapyear();
+            Assert.Throws<ArgumentException>(new Action(()=>
+            {
+                leapyear.isLeapYear(100);
+            }));
+        }
 
-            // Act
-            PromptUser.Main(new string[0]);
-            var output = writer.GetStringBuilder().ToString().Trim();
-
-            // Assert
-            Assert.Equal("Type in a year to learn if it is a leapyear!", output);
+        [Fact]
+        public void FormatException_is_thrown() 
+        {
+            var leapyear = new Leapyear();
+            Assert.Throws<FormatException>(new Action(()=>
+            {
+                leapyear.promptUser("string");
+            }));
         }
     }
 }

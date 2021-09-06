@@ -20,6 +20,7 @@ namespace App.Tests
             Assert.True(leapyear.isLeapYear(2024));
             Assert.True(leapyear.isLeapYear(2028));
         }
+        [Fact]
         public void isLeapYear_returns_false() 
         {
             var leapyear = new Leapyear();
