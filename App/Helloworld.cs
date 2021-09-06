@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace helloworld
+namespace App
 {
-    class Program
+    public class Helloworld
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
